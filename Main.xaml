@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="797.6,2002.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="797.6,3960.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -24,8 +24,9 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>UiPath.Excel</x:String>
       <x:String>System.Collections.ObjectModel</x:String>
-      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
       <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
       <x:String>UiPath.Excel.Model</x:String>
       <x:String>UiPath.Shared.Activities.Business</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
@@ -49,8 +50,8 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
-      <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
@@ -65,37 +66,37 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="782.4,1937.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="700.8,3896" sap2010:WorkflowViewState.IdRef="Sequence_8">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="740.8,1844.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="659.2,3803.2" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="707.2,1758.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="625.6,3716.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="665.6,1665.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="D:\UI PATH\Carloan\Car Loans.xlsx">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="584,3624" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="D:\UI PATH\Container report\report data.xlsx">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Carloans" />
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Report" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="632,1396" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="550.4,3354.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="590.4,1303.2" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Carloans.Sheet(&quot;Employee Car Loan&quot;)]" SaveAfterEachRow="False">
+                    <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="508.8,3261.6" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Report.Sheet(&quot;summary table&quot;)]" SaveAfterEachRow="False">
                       <ueab:ExcelForEachRowX.Body>
                         <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
                           <ActivityAction.Argument1>
@@ -104,53 +105,62 @@
                           <ActivityAction.Argument2>
                             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                           </ActivityAction.Argument2>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556.8,1118.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,3076.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ueab:VLookupX ColumnIndex="2" DisplayName="VLookup" ExactMatch="True" sap:VirtualizedContainerService.HintSize="515.2,262.4" sap2010:WorkflowViewState.IdRef="VLookupX_1" Label="[CurrentRow.ByField(&quot;License Plate&quot;)]" SourceRange="[Carloans.Sheet(&quot;License Plates&quot;)]">
+                            <ueab:VLookupX ColumnIndex="2" DisplayName="VLookup" ExactMatch="True" sap:VirtualizedContainerService.HintSize="433.6,262.4" sap2010:WorkflowViewState.IdRef="VLookupX_2" Label="[CurrentRow.ByField(string.Format(&quot;Container{0}No.&quot;, vbLf, vbCr))]" SourceRange="[Report.Sheet(&quot;packing list&quot;)]">
                               <ueab:VLookupX.Value>
-                                <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("Car")]</OutArgument>
+                                <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField(string.Format("Seal{0}No.", vbLf, vbCr))]</OutArgument>
                               </ueab:VLookupX.Value>
                             </ueab:VLookupX>
-                            <ueab:VLookupX ColumnIndex="3" DisplayName="VLookup" ExactMatch="True" sap:VirtualizedContainerService.HintSize="515.2,262.4" sap2010:WorkflowViewState.IdRef="VLookupX_2" Label="[CurrentRow.ByField(&quot;License Plate&quot;)]" SourceRange="[Carloans.Sheet(&quot;License Plates&quot;)]">
+                            <ueab:VLookupX ColumnIndex="3" DisplayName="VLookup" ExactMatch="True" sap:VirtualizedContainerService.HintSize="433.6,262.4" sap2010:WorkflowViewState.IdRef="VLookupX_3" Label="[CurrentRow.ByField(string.Format(&quot;Container{0}No.&quot;, vbLf, vbCr))]" SourceRange="[Report.Sheet(&quot;packing list&quot;)]">
                               <ueab:VLookupX.Value>
-                                <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("Model")]</OutArgument>
+                                <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField(string.Format("Container{0}Type", vbLf, vbCr))]</OutArgument>
                               </ueab:VLookupX.Value>
                             </ueab:VLookupX>
-                            <If Condition="[CurrentRow.ByField(&quot;Model&quot;)=&quot;Leon&quot;]" sap:VirtualizedContainerService.HintSize="515.2,420.8" sap2010:WorkflowViewState.IdRef="If_1">
-                              <If.Then>
-                                <Sequence sap:VirtualizedContainerService.HintSize="480,232" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <ueab:FormatRangeX DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="438.4,139.2" sap2010:WorkflowViewState.IdRef="FormatRangeX_1" Range="[CurrentRow]">
-                                    <ueab:FormatRangeX.Alignment>
-                                      <ui:AlignmentOptions HorizontalAlignment="xlHAlignGeneral" VerticalAlignment="xlVAlignBottom" WrapText="False" />
-                                    </ueab:FormatRangeX.Alignment>
-                                    <ueab:FormatRangeX.Font>
-                                      <ui:FontOptions Color="Black" FillColor="Magenta" FontFamilyName="Calibri" Size="11" Style="Regular" />
-                                    </ueab:FormatRangeX.Font>
-                                    <ueab:FormatRangeX.Format>
-                                      <ueab:GeneralFormat />
-                                    </ueab:FormatRangeX.Format>
-                                  </ueab:FormatRangeX>
-                                </Sequence>
-                              </If.Then>
-                              <If.Else>
-                                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_6">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                </Sequence>
-                              </If.Else>
-                            </If>
+                            <ueab:VLookupX ColumnIndex="9" DisplayName="VLookup" ExactMatch="True" sap:VirtualizedContainerService.HintSize="433.6,262.4" sap2010:WorkflowViewState.IdRef="VLookupX_4" Label="[CurrentRow.ByField(string.Format(&quot;Container{0}No.&quot;, vbLf, vbCr))]" SourceRange="[Report.Sheet(&quot;packing list&quot;)]">
+                              <ueab:VLookupX.Value>
+                                <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("Quantity")]</OutArgument>
+                              </ueab:VLookupX.Value>
+                            </ueab:VLookupX>
+                            <ueab:VLookupX ColumnIndex="10" DisplayName="VLookup" ExactMatch="True" sap:VirtualizedContainerService.HintSize="433.6,262.4" sap2010:WorkflowViewState.IdRef="VLookupX_5" Label="[CurrentRow.ByField(string.Format(&quot;Container{0}No.&quot;, vbLf, vbCr))]" SourceRange="[Report.Sheet(&quot;packing list&quot;)]">
+                              <ueab:VLookupX.Value>
+                                <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField(string.Format("CIP{0}(Ablyk R/S)", vbLf, vbCr))]</OutArgument>
+                              </ueab:VLookupX.Value>
+                            </ueab:VLookupX>
+                            <ueab:VLookupX ColumnIndex="11" DisplayName="VLookup" ExactMatch="True" sap:VirtualizedContainerService.HintSize="433.6,262.4" sap2010:WorkflowViewState.IdRef="VLookupX_6" Label="[CurrentRow.ByField(string.Format(&quot;Container{0}No.&quot;, vbLf, vbCr))]" SourceRange="[Report.Sheet(&quot;packing list&quot;)]">
+                              <ueab:VLookupX.Value>
+                                <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField(string.Format("DAP{0}(SARIA-GACH)", vbLf, vbCr))]</OutArgument>
+                              </ueab:VLookupX.Value>
+                            </ueab:VLookupX>
+                            <ueab:VLookupX ColumnIndex="12" DisplayName="VLookup" ExactMatch="True" sap:VirtualizedContainerService.HintSize="433.6,262.4" sap2010:WorkflowViewState.IdRef="VLookupX_7" Label="[CurrentRow.ByField(string.Format(&quot;Container{0}No.&quot;, vbLf, vbCr))]" SourceRange="[Report.Sheet(&quot;packing list&quot;)]">
+                              <ueab:VLookupX.Value>
+                                <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField(string.Format("FOB{0}(KOREAN PORT)", vbLf, vbCr))]</OutArgument>
+                              </ueab:VLookupX.Value>
+                            </ueab:VLookupX>
+                            <ueab:VLookupX ColumnIndex="13" DisplayName="VLookup" ExactMatch="True" sap:VirtualizedContainerService.HintSize="433.6,262.4" sap2010:WorkflowViewState.IdRef="VLookupX_8" Label="[CurrentRow.ByField(string.Format(&quot;Container{0}No.&quot;, vbLf, vbCr))]" SourceRange="[Report.Sheet(&quot;packing list&quot;)]">
+                              <ueab:VLookupX.Value>
+                                <OutArgument x:TypeArguments="ue:ExcelValue" xml:space="preserve">[CurrentRow.ByField("                       CIP                                      (Andijan-Severniy R/S )")]</OutArgument>
+                              </ueab:VLookupX.Value>
+                            </ueab:VLookupX>
+                            <ueab:VLookupX ColumnIndex="14" DisplayName="VLookup" ExactMatch="True" sap:VirtualizedContainerService.HintSize="433.6,262.4" sap2010:WorkflowViewState.IdRef="VLookupX_9" Label="[CurrentRow.ByField(string.Format(&quot;Container{0}No.&quot;, vbLf, vbCr))]" SourceRange="[Report.Sheet(&quot;packing list&quot;)]">
+                              <ueab:VLookupX.Value>
+                                <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField(string.Format("CBM{0}(m3)", vbLf, vbCr))]</OutArgument>
+                              </ueab:VLookupX.Value>
+                            </ueab:VLookupX>
+                            <ueab:VLookupX ColumnIndex="15" DisplayName="VLookup" ExactMatch="True" sap:VirtualizedContainerService.HintSize="433.6,262.4" sap2010:WorkflowViewState.IdRef="VLookupX_10" Label="[CurrentRow.ByField(string.Format(&quot;Container{0}No.&quot;, vbLf, vbCr))]" SourceRange="[Report.Sheet(&quot;packing list&quot;)]">
+                              <ueab:VLookupX.Value>
+                                <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField(string.Format("Net{0}Weight{0}(kg)", vbLf, vbCr))]</OutArgument>
+                              </ueab:VLookupX.Value>
+                            </ueab:VLookupX>
+                            <ueab:VLookupX ColumnIndex="16" DisplayName="VLookup" ExactMatch="True" sap:VirtualizedContainerService.HintSize="433.6,262.4" sap2010:WorkflowViewState.IdRef="VLookupX_11" Label="[CurrentRow.ByField(string.Format(&quot;Container{0}No.&quot;, vbLf, vbCr))]" SourceRange="[Report.Sheet(&quot;packing list&quot;)]">
+                              <ueab:VLookupX.Value>
+                                <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField(string.Format("Gross{0}Weight{0}(kg)", vbLf, vbCr))]</OutArgument>
+                              </ueab:VLookupX.Value>
+                            </ueab:VLookupX>
                           </Sequence>
                         </ActivityAction>
                       </ueab:ExcelForEachRowX.Body>
