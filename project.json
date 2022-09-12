@@ -1,5 +1,5 @@
 {
-  "name": "excelautomation",
+  "name": "funsport",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -40,13 +40,13 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": true
+    "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "a821999d-76c8-4ad3-968a-1abf0567ae60",
+      "uniqueId": "f3975de2-5bd2-4c2f-ba7c-01ed8cf1161b",
       "input": [],
       "output": []
     }
